@@ -1,0 +1,6 @@
+httpdpkg: httpd
+phppkg: php
+mariadbpkg: mariadb
+
+httpdservice: httpd
+mariadbservice: mariadb

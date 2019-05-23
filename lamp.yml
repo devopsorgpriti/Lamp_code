@@ -1,0 +1,8 @@
+---
+ - hosts: Lampgrp
+   become: true
+   
+   roles:
+     - lamp_install
+     - lamp_config
+

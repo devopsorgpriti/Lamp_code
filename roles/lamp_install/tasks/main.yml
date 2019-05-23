@@ -1,0 +1,16 @@
+---
+# tasks file for lamp_install
+
+  - name: Uninstall httpd
+    yum: name=httpd state=absent
+
+  - name: Install httpd
+    yum: name=httpd state=present
+
+  - name: Start firewall
+    service: name=firewalld state=started enabled=yes
+
+  - name: httpd service start
+    service: name=httpd state=started enabled=yes
+
+
